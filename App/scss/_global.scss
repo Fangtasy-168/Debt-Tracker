@@ -1,0 +1,141 @@
+:root {
+    --color1: #b41e22;
+    --color2: #b18944;
+    --color3: #d8b953;
+    --color4: #d66e26;
+    --color5: #d9c8b5;
+    --nightskybase: #070b34;
+    --nightskybase2: #141852; 
+    --nightskybase3: #2b2f77;
+    --nightskybase4: #483475;
+    --nightskybase5: #6b4984;
+    --nightskybase6: #855988; 
+    
+  }
+
+
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100%
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    background: linear-gradient(16deg, rgb(7, 11, 52) 30%,
+     rgba(21,25,83,1) 57%,
+      rgba(20,24,82,1) 70%,
+       rgba(43,47,119,1) 80%,
+        rgba(72,54,107,1) 88%,
+         rgba(107,73,132,1) 95%,
+          rgba(133,89,136,1) 100%);
+
+}
+header {
+    text-align: center;
+    width: 100%;
+    color:#d8b953
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 20px;
+    align-items: center;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height:100%; 
+    min-width: 450px;
+    max-height: 750px; 
+    max-width: 450px;
+    background-color: var(--color5);
+    box-shadow: 10px 5px 5px black;
+    
+
+}
+.info{
+    
+    position:absolute;
+    padding: 10px;
+    font-size: large;
+    overflow-y: auto;
+    z-index: -1;
+
+    
+}
+.info > p{
+    border-bottom: var(--color2) solid 2px;
+}
+
+#tab{
+    border-bottom: solid 3px black;
+    height:15%;
+    width: 100%;
+    border-radius: 0% 0% 50% 50%;    
+    
+}
+.inputs{
+    position:absolute;
+    justify-content:space-between;
+    background-color: var(--color1);
+    box-shadow: 10px 5px 5px black;
+    button{
+        display: block;
+        margin:auto;
+        font-size: large;
+    }
+    
+}
+
+input{
+    display: block;
+    margin: auto;
+    font-size: large;    
+}
+
+
+#addInfo{
+    display: flex;
+    justify-content: space-evenly;
+    button{
+        margin: 10px 0px;
+        font-size: medium;
+    }
+}
+ 
+
+.userDebtInputs{
+    border-radius: 50px;
+    padding: 1px;
+    text-align: center;
+    width: 80%
+}
+ 
+
+.slide-in {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.slide-out {
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+.slide-out2 {
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+ }
