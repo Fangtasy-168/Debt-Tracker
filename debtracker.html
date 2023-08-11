@@ -1,42 +1,47 @@
+<!-- wubalooloo -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "App\scss\style.css" rel="stylesheet">
+    <link href="App\scss\style.css" rel="stylesheet">
     <title>Debt Tracker</title>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script type = "text/javascript" src="App\JS\debtTracker.js"></script>
+<script type="text/javascript" src="App\JS\debtTracker.js"></script>
 
 <body>
     <header>
         <h1>Debt Tracker</h1>
     </header>
-        <div class ="container">
-            <div id="log" class = "panel log info">
-                
+    <div class="container">
+        <div id="log" class="panel log info">
+
+        </div>
+        <div id="envelope" class="panel inputs">
+            <div id="tab"></div>
+            <div id="debtInputs">
+                <input name="Payer" class="userDebtInputs" id="Payer" placeholder="Payer" type="text" required></input>
+                <input name="Debtor" class="userDebtInputs" id="Debtor" placeholder="Debtor" type="text"
+                    required></input>
+                <input name="Amount" class="userDebtInputs" id="Amount" placeholder=Amount type="text" required></input>
+                <input name="Description" class="userDebtInputs" id="Description" placeholder=Description type="text"
+                    required></input>
+                <button id="submit" type="submit" value="Submit">Submit</button>
             </div>
-            <div id="envelope" class ="panel inputs">
-                <div id = "tab"></div>
-                <div id="debtInputs">
-                <input name ="Payer" class ="userDebtInputs" id="Payer" placeholder ="Payer" type = "text" required ></input>
-                <input name ="Debtor" class ="userDebtInputs" id="Debtor" placeholder ="Debtor" type ="text" required ></input>
-                <input name ="Amount" class ="userDebtInputs" id="Amount" placeholder =Amount type = "text" required ></input>
-                <input name ="Description" class ="userDebtInputs" id="Description" placeholder = Description type = "text" required ></input>
-                <button id="submit" type ="submit" value = "Submit">Submit</button>
-                </div> 
-                <div id = "addInfo">
-                    <button class="infoButton" id ="logButton">Records</button>
-                    <button class="infoButton" id ="resultsButton">Final Debts</button>
-                </div>
-            </div>
-            <div id="finalDebts" class = "panel final info">
-               
+            <div id="addInfo">
+                <button class="infoButton" id="logButton">Records</button>
+                <button class="infoButton" id="resultsButton">Final Debts</button>
             </div>
         </div>
-   
-    
+        <div id="finalDebts" class="panel final info">
+
+        </div>
+    </div>
+
+
 
 </body>
 
